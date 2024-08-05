@@ -1,7 +1,6 @@
-const localhost = "192.168.7.33";
 let peerConnection;
 let localStream;
-const socket = io(`https://${localhost}:8000`);
+const socket = io();
 const localVideo = document.getElementById('localVideo');
 const remoteVideo = document.getElementById('remoteVideo');
 const logsDiv = document.getElementById('logs');
