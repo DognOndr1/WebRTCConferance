@@ -1,0 +1,104 @@
+body {
+    background-color: aqua;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.video-sec {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#localVideo{
+    width: 720px;
+    height: 480px;
+    background-color: black;
+}
+
+button{
+    margin-bottom: 15px;
+}
+
+
+#remoteVideo{
+    width: 720px;
+    height: 480px;
+    background-color: black;
+}
+
+
+video {
+    width: 320px;
+    height: 240px;
+    border: 1px solid #ccc;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    padding: 10px;
+    font-size: 16px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+}
+
+#logs {
+    margin-top: 20px;
+    width: 100%;
+    height: 200px;
+    overflow-y: scroll;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-family: monospace;
+}
+
+#startButton{
+    background-color: red;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+#startButton:hover{
+    background-color: rgb(180, 0, 0);
+}
+
+@media (max-width: 750px) {
+    .video-sec {
+        flex-direction: column;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    video {
+        width: 100%; /* Ekran boyutuna göre video genişliği */
+        height: auto; /* Ekran boyutuna göre video yüksekliği */
+    }
+
+    #localVideo, #remoteVideo {
+        width: 100%;
+        height: auto;
+    }
+
+    textarea {
+        height: auto;
+    }
+
+    #logs {
+        height: auto;
+    }
+}
+
